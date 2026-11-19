@@ -66,3 +66,5 @@ demo :-
 
     nl,
     write('=== ANALYSIS COMPLETE ==='), nl.
+
+:- initialization(demo, main).
