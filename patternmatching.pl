@@ -1,3 +1,6 @@
+% ==========================================
+% PATTERN MATCHING DEMO
+% ==========================================
 
 % Identify data types
 infer_type(Value, integer) :-
