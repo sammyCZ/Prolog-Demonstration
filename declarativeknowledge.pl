@@ -74,7 +74,7 @@ main :-
     show_all('Everyone descended from george', ancestor(george, D), D),
 
     nl,
-    writeln('No search code was written - only facts and rules!').
+    writeln('Notice how no search code was written? Only facts and rules!').
 
 % Print every answer Prolog can derive for a query
 

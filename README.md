@@ -114,7 +114,7 @@ This program stores a family tree as facts and defines relationships such as fat
 Open the terminal in the project folder and run:
 
 ```bash
-swipl knowledgerepresentation.pl
+swipl declarativeknowledge.pl
 ```
 
 The program automatically runs and displays every relationship Prolog can derive from the facts.
@@ -122,7 +122,7 @@ The program automatically runs and displays every relationship Prolog can derive
 To ask your own questions, load the program without running it:
 
 ```bash
-swipl -l knowledgerepresentation.pl
+swipl -l declarativeknowledge.pl
 ```
 
 Then enter a query, such as:
