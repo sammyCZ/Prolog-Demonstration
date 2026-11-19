@@ -4,6 +4,7 @@ This project demonstrates the Prolog programming language
 
 - **Backtracking Search:** Uses facts, rules, recursion, and backtracking to find possible routes between cities.
 - **Expression Analyzer:** Uses pattern matching and rules to identify data types and check whether operations are valid.
+- **Declarative Knowledge Representation:** Stores family relationships as facts and defines new relationships as rules, letting Prolog derive the answers.
 
 ## Requirements
 
@@ -77,7 +78,7 @@ This program finds all possible routes from city A to city D.
 Open the terminal in the project folder and run:
 
 ```bash
-swipl backtracking.pl
+swipl backtrackingsearch.pl
 ```
 
 The program automatically runs and displays the routes found.
@@ -95,7 +96,7 @@ swipl
 Load the program:
 
 ```prolog
-['expression_analyzer.pl'].
+['patternmatching.pl'].
 ```
 
 Run the demonstration:
@@ -105,6 +106,32 @@ demo.
 ```
 
 The program displays whether each expression is valid and identifies the result type when a match is found.
+
+### Declarative Knowledge Representation
+
+This program stores a family tree as facts and defines relationships such as father, grandparent, sibling, aunt or uncle, and ancestor as rules.
+
+Open the terminal in the project folder and run:
+
+```bash
+swipl knowledgerepresentation.pl
+```
+
+The program automatically runs and displays every relationship Prolog can derive from the facts.
+
+To ask your own questions, load the program without running it:
+
+```bash
+swipl -l knowledgerepresentation.pl
+```
+
+Then enter a query, such as:
+
+```prolog
+ancestor(X, peter).
+```
+
+Press `;` to see the next answer, or press Enter to stop. The same rule works in either direction, so `ancestor(george, X).` lists descendants instead.
 
 ## Exiting Prolog
 
